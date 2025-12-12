@@ -19,17 +19,17 @@ cd fastapiexample
 '''bash
 python -m venv .venv
 source .venv/bin/activate    # Linux/Mac
-### Install Dependencies(pyproject.toml)
-pip install .
-### Running fastapi
-uvicorn app.main:app --reload
 ### Create Config.py
 SECRET_KEY = os.getenv("SECRET_KEY", "your-secret-key")
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./test.db")
 ACCESS_EXPIRE_MIN = int(os.getenv("ACCESS_EXPIRE_MIN", 30))
 REFRESH_EXPIRE_DAYS = int(os.getenv("REFRESH_EXPIRE_DAYS", 7)
+### Install Dependencies(pyproject.toml)
+pip install .
+### Running fastapi
+uvicorn app.main:app --reload
+<img width="1920" height="998" alt="Screenshot from 2025-12-12 12-16-23" src="https://github.com/user-attachments/assets/28b15fab-7126-470a-a57e-d4a4a48ec670" />
 
-<img width="1920" height="998" alt="Screenshot from 2025-12-12 12-16-23" src="https://github.com/user-attachments/assets/9ae077ec-5311-4126-98f5-3d8b7270bcda" />
 
 
 
